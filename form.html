@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+ 
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fstyle.css">
+    <title>Mobile Repair Form</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- <div class="contact-info">
+           <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
+           <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
+           <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+        </div> -->
+     
+        <nav class="navbar">
+     
+           <a href="#" class="logo"> <img src="./images/logo.png" alt="img" width="300px" height="160px"></a>
+     
+           <div class="links">
+              <a href="index.html">home</a>
+              <a href="#about">about</a>
+              <a href="#Brand">Brand</a>
+              <a href="#services">services</a>
+              <a href="#gallery">gallery</a>
+              <a href="#team">team</a>
+              <a href="#reviews">reviews</a>
+              <a href="#contact">contact</a>
+           </div>
+     
+           <div id="menu-btn" class="fa fa-bars"></div>
+     
+        </nav>
+     
+     </header>
+
+
+    <div class="wrapper">
+        <form class="repair-form" id="repairForm">
+            <h1>Mobile Repair Request</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="model">Device Brand:</label>
+            <input type="text" id="Brand" name="Brand" required>
+
+            <label for="model">Device Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <fieldset>
+                <legend>Select Issues:</legend>
+                <label><input type="checkbox" name="issues" value="Screen Repair"> Screen Repair</label>
+                <label><input type="checkbox" name="issues" value="Battery Replacement"> Battery Replacement</label>
+                <label><input type="checkbox" name="issues" value="Water Damage"> Water Damage</label>
+                <label><input type="checkbox" name="issues" value="Software Issues"> Software Issues</label>
+                <label><input type="checkbox" name="issues" value="Charging Port Repair"> Charging Port Repair</label>
+                <label><input type="checkbox" name="issues" value="Other"> Other</label>
+            </fieldset>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div id="thankYouMessage" class="thank-you hidden">
+            <h2>Thank You!</h2>
+            <p>Your submission has been received. We will get back to you shortly.</p>
+            <a href="index.html">Back to Home</a>
+        </div>
+        <div class="confetti hidden"></div> <!-- Confetti container -->
+    </div>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+     
+           <div class="box">
+              <h3>quick links</h3>
+              <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+              <a class="link" href="#about"> <i class="fas fa-angle-right"></i> about</a>
+              <a class="link" href="#services"> <i class="fas fa-angle-right"></i> services</a>
+              <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+              <a class="link" href="#team"> <i class="fas fa-angle-right"></i> team</a>
+              <a class="link" href="#reviews"> <i class="fas fa-angle-right"></i> reviews</a>
+              <a class="link" href="#contact"> <i class="fas fa-angle-right"></i> contact</a>
+           </div>
+     
+           <div class="box">
+              <h3>opening hours</h3>
+              <p> <span>monday :</span> 10:00am to 00:09pm </p>
+              <p> <span>tuesday :</span> 10:00am to 00:09pm </p>
+              <p> <span>wednesday :</span> 10:00am to 00:09pm </p>
+              <p> <span>thursday :</span> 10:00am to 00:09pm </p>
+              <p> <span>friday :</span> 10:00am to 00:09pm </p>
+              <p> <span>saturday :</span> 10:00am to 00:09pm </p>
+              <p> <span>sunday :</span> closed </p>
+           </div>
+     
+           <div class="box">
+              <h3>contact info</h3>
+              <a href="#" class="link"> <i class="fas fa-phone"></i> +91 79907 82617 </a>
+              <a href="#" class="link"> <i class="fas fa-phone"></i> +91 63540 70334</a>
+              <a href="#" class="link"> <i class="fas fa-envelope"></i> dhavuchaudhary009@gmail.com </a>
+              <a href="#" class="link"> <i class="fas fa-map"></i> Ahmedabad, india - 380007 </a>
+           </div>
+     
+           <div class="box">
+              <h3>newsletter</h3>
+              <p>subscribe for latest updates</p>
+              <form action="">
+                 <input type="email" name="" placeholder="enter your email" id="" class="email">
+                 <input type="submit" value="subscribe" class="btn">
+              </form>
+              <div class="share">
+                 <a href="#" class="fab fa-facebook-f"></a>
+               
+                 <a href="#" class="fab fa-instagram"></a>
+                 <a href="#" class="fab fa-linkedin"></a>
+              </div>
+           </div>
+     
+        </div>
+     
+        <div class="credit"> created by <span>mr. Dhaval Chaudhary</span> | all rights reserved! </div>
+     
+     </section>
+
+    <script>
+        document.getElementById('repairForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            this.reset(); // Reset the form fields
+            document.querySelector('.repair-form').classList.add('hidden'); // Hide the form
+            document.getElementById('thankYouMessage').classList.remove('hidden'); // Show thank you message
+            showConfetti(); // Show confetti animation
+        });
+
+        function showConfetti() {
+            const confetti = document.querySelector('.confetti');
+            confetti.classList.remove('hidden');
+            setTimeout(() => {
+                confetti.classList.add('hidden');
+            }, 5000); // Hide confetti after 5 seconds
+        }
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+</body>
+</html>
